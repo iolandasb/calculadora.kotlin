@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">cadastro.kotlin</string>
+    <string name="titulo">Cadastro de Anúncios</string>
+    <string name="hint_nome">Inserir nome do anúncio</string>
+    <string name="hint_cliente">Inserir cliente</string>
+    <string name="hint_dataInicio">Inserir data de início do anúncio</string>
+    <string name="hint_dataTermino">Inserir data de término do anúncio</string>
+    <string name="hint_investimento">Inserir valor investido</string>
+    <string name="botao_salvar">SALVAR</string>
+    <string name="hint_pesquisar">Pesquisar</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="botao_limpar">LIMPAR PESQUISA</string>
+    <string name="botao_IrCadastro">Cadastrar Novo Anúncio</string>
+</resources>

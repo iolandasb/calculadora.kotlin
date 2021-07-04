@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">calculadora.kotlin</string>
+    <string name="titulo">Calculadora de Alcance de Anúnicos</string>
+    <string name="hint_investimento">Digite o valor investido (em reais)</string>
+    <string name="hint_anuncio">Digite o nome do anúncio</string>
+    <string name="botao_calcular">Calcular</string>
+
+</resources>

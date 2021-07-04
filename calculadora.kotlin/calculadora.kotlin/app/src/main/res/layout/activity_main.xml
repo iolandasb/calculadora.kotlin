@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TituloCalculadora"
+            android:layout_width="321dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/background"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <EditText
+            android:id="@+id/edtNomeAnuncio"
+            style="@style/CaixasHint"
+            android:backgroundTint="#FFFFFF"
+            android:hint="@string/hint_anuncio"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/edtValor"
+            style="@style/CaixasHint"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="#FFFFFF"
+            android:hint="@string/hint_investimento"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtNomeAnuncio" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            style="@style/Botoes"
+            android:backgroundTint="@color/icones"
+            android:text="@string/botao_calcular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtValor"
+            app:layout_constraintVertical_bias="0.118" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="321dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/background"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCalcular">
+
+            <TextView
+                android:id="@+id/txtAnuncio"
+                style="@style/TextoResultado"
+                android:text="Anúncio:" />
+
+            <TextView
+                android:id="@+id/txtProjecao"
+                style="@style/TextoResultado"
+                android:text="Projeção - Máximo de Visualizações:" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

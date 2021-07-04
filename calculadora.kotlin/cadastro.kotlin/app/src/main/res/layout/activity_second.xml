@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".SecondActivity"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Titulo"
+            android:background="@drawable/background"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <EditText
+            android:id="@+id/edtNomeAnuncio"
+            style="@style/CaixasHint"
+            android:backgroundTint="#FFFFFF"
+            android:hint="@string/hint_nome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/edtCliente"
+            style="@style/CaixasHint"
+            android:backgroundTint="#FFFFFF"
+            android:hint="@string/hint_cliente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtNomeAnuncio" />
+
+
+        <EditText
+            android:id="@+id/edtDataInicio"
+            style="@style/CaixasHint"
+            android:backgroundTint="@color/hints"
+            android:hint="@string/hint_dataInicio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtCliente" />
+
+        <EditText
+            android:id="@+id/edtDataTermino"
+            style="@style/CaixasHint"
+            android:backgroundTint="@color/hints"
+            android:hint="@string/hint_dataTermino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtDataInicio" />
+
+        <EditText
+            android:id="@+id/edtInvestimento"
+            style="@style/CaixasHint"
+            android:backgroundTint="@color/hints"
+            android:hint="@string/hint_investimento"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtDataTermino"/>
+
+        <Button
+            android:id="@+id/btnSalvar"
+            style="@style/Botoes"
+            android:layout_marginTop="52dp"
+            android:backgroundTint="@color/icones"
+            android:text="@string/botao_salvar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtInvestimento" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
